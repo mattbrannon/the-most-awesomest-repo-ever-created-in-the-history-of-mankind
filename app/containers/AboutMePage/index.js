@@ -17,12 +17,17 @@ const AboutMePage = () => {
     getData();
   });
 
+  const imgStyle = {
+    borderRadius: '50%',
+    width: '25%',
+  };
+
   return (
     <div>
       <h3>About me:</h3>
       <div>
         <p>{name}</p>
-        <img src={img} alt="user avatar" />
+        <img src={img} alt="user avatar" style={imgStyle} />
         <p>{blurb}</p>
       </div>
     </div>
